@@ -22,8 +22,10 @@ steps:
     repository: 'bashirahmed/docker'
     command: 'build'
     Dockerfile: '**/Dockerfile'
+    tags: 'basheer'
 - task: Docker@2
   inputs:
     containerRegistry: 'dockerhub'
     repository: 'bashirahmed/docker'
     command: 'push'
+    tags: 'basheer'
